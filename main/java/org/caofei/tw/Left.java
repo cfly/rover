@@ -13,17 +13,17 @@ public class Left implements Action {
     private Direction left(Direction direction) {
         Direction result = null;
         switch (direction) {
-            case EAST:
-                result = Direction.NORTH;
+            case E:
+                result = Direction.N;
                 break;
-            case NORTH:
-                result = Direction.WEST;
+            case N:
+                result = Direction.W;
                 break;
-            case SOUTH:
-                result = Direction.EAST;
+            case S:
+                result = Direction.E;
                 break;
-            case WEST:
-                result = Direction.SOUTH;
+            case W:
+                result = Direction.S;
                 break;
         }
         return result;

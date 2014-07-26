@@ -8,16 +8,16 @@ public class Move implements Action {
     @Override
     public void action(Rovar rovar) {
         switch (rovar.getDirection()) {
-            case EAST:
+            case E:
                 rovar.setX(rovar.getX() + 1);
                 break;
-            case NORTH:
+            case N:
                 rovar.setY(rovar.getY() + 1);
                 break;
-            case SOUTH:
+            case S:
                 rovar.setY(rovar.getY() - 1);
                 break;
-            case WEST:
+            case W:
                 rovar.setX(rovar.getX() - 1);
                 break;
         }
